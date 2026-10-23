@@ -10,6 +10,11 @@ class Main {
     public static void main(String[] args) {
        Map<Integer,String> map = new HashMap<>();
 
+        /*
+        A hash map is just a hashset + list combined to create a ket value pair data structure. Therefore If
+        a non-unique key id provided, the map will simply overrride the old valu with the newly provided values
+        at the key.
+        */
         map.put(1,"Andrew");
         map.put(2,"Will");
         System.out.println(map);
