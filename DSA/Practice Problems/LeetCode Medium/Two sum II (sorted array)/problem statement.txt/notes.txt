@@ -1,0 +1,11 @@
+SOLUTION: The 2 pointer approach can be used to find the two unique values that add up to a particular target value.
+NOTE: the two pointer technique in this case, can only be used on a sorted array
+
+___START___
+L starts at 0
+and H starts at the last index
+NOTE: the sum of the two pointer values (L and H) must be equal to the target -> IF true -> return L + 1 and H + 1;
+IF : the sum of A[L] + A[H] is greater than the target -> decrease the cummulative sum -> shift H to the LEFT;
+IF : the sum of A[L] + A[H] is less than the target -> increase the cummulative sum -> shift L to the RIGHT;
+AND: IF: NO sum was found -> return L=-1,H=-1
+___END___
