@@ -1,0 +1,17 @@
+If a list has a cycle then, we know that none of the nodes will ever be null where : n.next == null
+therefore, Using Floyd's algorithm, we can detect cycles within a linked list
+SOLUTION
+DEFINE : Node L and H
+ITERATE: while (H.next is NOT NULL and H id NOT NULL)
+        move L by 1 ->  L = L.next;  
+        move H by 2 ->  H = H.next.next; 
+CHECK:IF(L equals H) -> Reference check
+     -then if there equal, then H has cycled back to the same Node. This is because L's position will always be less than H
+      (H move 2wice as fast)
+      --CONDITION IS VALID--
+END ITERATION
+
+
+summary:
+we start by iterating through the list with L and H pointers (fast and slow pointers) -> if they ever intersect - CYCLE DETECTED
+                                                                                      -> if H == null or H.next == null - CYCLE NOT FOUND
