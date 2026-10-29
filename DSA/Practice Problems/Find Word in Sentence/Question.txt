@@ -1,0 +1,10 @@
+Given A sentence S find all the starting indices of the target word T in S 
+Example 1 :
+S = "Is a Sentence, Yes, Yes, Yes, No!"
+T = "Yes"
+Output: {15,20,25}; -> Yes appears 3 times in the sentence
+
+Example 1 :
+S = "Is a Sentence, Yes, Yes, Yes, No!"
+T = "Hey!"
+Output: {}; -> no match
