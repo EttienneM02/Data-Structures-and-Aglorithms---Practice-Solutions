@@ -1,0 +1,9 @@
+Post order traversal ==> LEFT,RIGHT,ROOT
+Pre order traversal ==> ROOT,LEFT,RIGHT
+In order traversal ==> LEFT,ROOT,RIGHT
+
+Solution: Keep track of 2 stacks
+- Stack1 -> add the current node to visit (left, right then root)
+- Stack2  -> persists the data in a First in last out format
+- this means that the list will be pushed in a preorder traversal format (R,r,l)
+- and elements will be popped out of Stack2 as -> (l,r,R)
